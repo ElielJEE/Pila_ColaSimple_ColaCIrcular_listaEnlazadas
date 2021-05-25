@@ -55,7 +55,8 @@ namespace Pilas_ColasSimples_ColasCirculares
 
         private void preifjaAInfijaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormPrefijaInfija prefijaInfija = new FormPrefijaInfija();
+            prefijaInfija.Show();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)

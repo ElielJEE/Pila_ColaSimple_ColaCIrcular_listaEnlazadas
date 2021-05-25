@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace Pilas_ColasSimples_ColasCirculares
 {
-    public partial class FormPosfijaInfija : Form
+    public partial class FormPrefijaInfija : Form
     {
-        public FormPosfijaInfija()
+        public FormPrefijaInfija()
         {
             InitializeComponent();
         }
 
         int tope, maximo;
-        string notacionInfija = "", notacionPosfija, aux1, aux2;
+        string notacionInfija = "", notacionPrefija, aux1, aux2, invertida;
         char dato;
         string[] pila;
 
@@ -78,29 +78,26 @@ namespace Pilas_ColasSimples_ColasCirculares
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (txtPosfija.Text != "")
+            if (txtPrefija.Text != "")
             {
-                notacionPosfija = txtPosfija.Text;
-                maximo = notacionPosfija.Length;
-                pila = new string[notacionPosfija.Length];
+                notacionPrefija = txtPrefija.Text;
+                maximo = notacionPrefija.Length;
+                pila = new string[notacionPrefija.Length];
 
-                while (notacionPosfija != "")
+                for (int i = notacionPrefija.Length - 1; i >= 0; i--)
                 {
-                    dato = notacionPosfija[0];
-                    notacionPosfija = notacionPosfija.Substring(1);
+                    dato = notacionPrefija[i];
 
-                    if (dato >= '0' && dato <= '9')
+                    if (dato != '^' && dato != '*' && dato != '/' && dato != '+' && dato != '-')
                     {
                         Agregar(dato.ToString());
                     }
                     else
                     {
-
                         aux1 = Eliminar();
                         aux2 = Eliminar();
-                        aux1 = "(" + aux2 + dato + aux1 + ")";
-                        Agregar(aux1);
-
+                        aux2 = "(" + aux2 + dato + aux1 + ")";
+                        Agregar(aux2);
                     }
                 }
 
@@ -109,10 +106,26 @@ namespace Pilas_ColasSimples_ColasCirculares
                     notacionInfija += Eliminar();
                 }
 
-                dataGridView1.Rows.Add(txtPosfija.Text, notacionInfija);
-                txtPosfija.Clear();
-                notacionPosfija = "";
+                for (int i = notacionInfija.Length - 1; i >= 0; i--)
+                {
+                    if (notacionInfija[i] == '(')
+                    {
+                        invertida += ')';
+                    }
+                    else if (notacionInfija[i] == ')')
+                    {
+                        invertida += '(';
+                    }
+                    else
+                    {
+                        invertida += notacionInfija[i];
+                    }
+                }
+                dataGridView1.Rows.Add(notacionPrefija, notacionInfija, invertida);
+                txtPrefija.Clear();
+                invertida = ""; 
                 notacionInfija = "";
+                notacionPrefija = "";
             }
             else
             {
