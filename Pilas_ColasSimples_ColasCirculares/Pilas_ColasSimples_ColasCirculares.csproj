@@ -82,6 +82,12 @@
     <Compile Include="FormPila.Designer.cs">
       <DependentUpon>FormPila.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPosfijaInfija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPosfijaInfija.Designer.cs">
+      <DependentUpon>FormPosfijaInfija.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPila.resx">
       <DependentUpon>FormPila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPosfijaInfija.resx">
+      <DependentUpon>FormPosfijaInfija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -142,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\121738.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp8773939-vaporwave-statue-wallpapers.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

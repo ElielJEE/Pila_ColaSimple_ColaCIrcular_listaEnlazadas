@@ -119,5 +119,15 @@ namespace Pilas_ColasSimples_ColasCirculares.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wp8773939_vaporwave_statue_wallpapers {
+            get {
+                object obj = ResourceManager.GetObject("wp8773939-vaporwave-statue-wallpapers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

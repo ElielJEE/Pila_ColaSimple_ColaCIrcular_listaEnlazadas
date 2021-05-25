@@ -117,12 +117,14 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.posfijaAInfijaToolStripMenuItem.Name = "posfijaAInfijaToolStripMenuItem";
             this.posfijaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.posfijaAInfijaToolStripMenuItem.Text = "Posfija a Infija";
+            this.posfijaAInfijaToolStripMenuItem.Click += new System.EventHandler(this.posfijaAInfijaToolStripMenuItem_Click);
             // 
             // preifjaAInfijaToolStripMenuItem
             // 
             this.preifjaAInfijaToolStripMenuItem.Name = "preifjaAInfijaToolStripMenuItem";
             this.preifjaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.preifjaAInfijaToolStripMenuItem.Text = "Preifja a Infija";
+            this.preifjaAInfijaToolStripMenuItem.Click += new System.EventHandler(this.preifjaAInfijaToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
