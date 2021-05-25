@@ -63,6 +63,16 @@ namespace Pilas_ColasSimples_ColasCirculares.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _121738 {
+            get {
+                object obj = ResourceManager.GetObject("121738", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _121772 {
             get {
                 object obj = ResourceManager.GetObject("121772", resourceCulture);

@@ -70,6 +70,12 @@
     <Compile Include="FormInfijaPosfija.Designer.cs">
       <DependentUpon>FormInfijaPosfija.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInfijaPrefija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfijaPrefija.Designer.cs">
+      <DependentUpon>FormInfijaPrefija.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormInfijaPosfija.resx">
       <DependentUpon>FormInfijaPosfija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfijaPrefija.resx">
+      <DependentUpon>FormInfijaPrefija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPila.resx">
       <DependentUpon>FormPila.cs</DependentUpon>
@@ -130,6 +139,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\690940.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121738.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

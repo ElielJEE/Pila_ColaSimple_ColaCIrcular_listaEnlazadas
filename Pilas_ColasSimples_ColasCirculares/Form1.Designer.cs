@@ -110,6 +110,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.infijaAPrefijaToolStripMenuItem.Name = "infijaAPrefijaToolStripMenuItem";
             this.infijaAPrefijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.infijaAPrefijaToolStripMenuItem.Text = "Infija a Prefija";
+            this.infijaAPrefijaToolStripMenuItem.Click += new System.EventHandler(this.infijaAPrefijaToolStripMenuItem_Click);
             // 
             // posfijaAInfijaToolStripMenuItem
             // 
