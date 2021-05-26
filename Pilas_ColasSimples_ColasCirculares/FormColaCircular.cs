@@ -64,9 +64,6 @@ namespace Pilas_ColasSimples_ColasCirculares
 
         public void Eliminar()
         {
-            string nombre, marca;
-            double precio, total;
-            int horas;
 
             if (frente == -1)
             {
@@ -74,12 +71,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             }
             else
             {
-                nombre = cliente[frente].nombre;
-                marca = cliente[frente].marca;
-                precio = cliente[frente].precio;
-                horas = cliente[frente].horas;
-                total = cliente[frente].total;
-
+                dataGridView1.Rows.RemoveAt(0);
 
                 if (frente == final)
                 {
@@ -96,20 +88,6 @@ namespace Pilas_ColasSimples_ColasCirculares
                     {
                         frente++;
                     }
-                }
-            }
-
-            dataGridView1.Rows.Clear();
-            for (int i = frente; i < final + 1; i++)
-            {
-                if (frente != -1)
-                {
-                    dataGridView1.Rows.Add(cliente[i].nombre, cliente[i].marca,
-                        cliente[i].precio, cliente[i].horas, cliente[i].total);
-                }
-                else
-                {
-                    dataGridView1.Rows.Clear();
                 }
             }
         }

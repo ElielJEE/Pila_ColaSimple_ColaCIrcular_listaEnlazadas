@@ -57,17 +57,8 @@ namespace Pilas_ColasSimples_ColasCirculares
 
         public void Eliminar()
         {
-            string datoNombre, datoMarca;
-            double datoPrecio, datoTotal;
-            int datoHoras;
-
             if (frente > -1)
             {
-                datoNombre = cliente[frente].nombre;
-                datoMarca = cliente[frente].marca;
-                datoPrecio = cliente[frente].precio;
-                datoHoras = cliente[frente].horas;
-                datoTotal = cliente[frente].total;
 
                 if (frente == final)
                 {
