@@ -62,6 +62,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.ColasSimpleForm,
             this.ColasCircularesForm,
             this.notacionesToolStripMenuItem});
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(69, 20);
             this.toolStripMenuItem1.Text = "Opciones";
@@ -101,33 +102,34 @@ namespace Pilas_ColasSimples_ColasCirculares
             // infijaAPosfijaToolStripMenuItem
             // 
             this.infijaAPosfijaToolStripMenuItem.Name = "infijaAPosfijaToolStripMenuItem";
-            this.infijaAPosfijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.infijaAPosfijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.infijaAPosfijaToolStripMenuItem.Text = "Infija a Posfija";
             this.infijaAPosfijaToolStripMenuItem.Click += new System.EventHandler(this.infijaAPosfijaToolStripMenuItem_Click);
             // 
             // infijaAPrefijaToolStripMenuItem
             // 
             this.infijaAPrefijaToolStripMenuItem.Name = "infijaAPrefijaToolStripMenuItem";
-            this.infijaAPrefijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.infijaAPrefijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.infijaAPrefijaToolStripMenuItem.Text = "Infija a Prefija";
             this.infijaAPrefijaToolStripMenuItem.Click += new System.EventHandler(this.infijaAPrefijaToolStripMenuItem_Click);
             // 
             // posfijaAInfijaToolStripMenuItem
             // 
             this.posfijaAInfijaToolStripMenuItem.Name = "posfijaAInfijaToolStripMenuItem";
-            this.posfijaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.posfijaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.posfijaAInfijaToolStripMenuItem.Text = "Posfija a Infija";
             this.posfijaAInfijaToolStripMenuItem.Click += new System.EventHandler(this.posfijaAInfijaToolStripMenuItem_Click);
             // 
             // preifjaAInfijaToolStripMenuItem
             // 
             this.preifjaAInfijaToolStripMenuItem.Name = "preifjaAInfijaToolStripMenuItem";
-            this.preifjaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.preifjaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.preifjaAInfijaToolStripMenuItem.Text = "Preifja a Infija";
             this.preifjaAInfijaToolStripMenuItem.Click += new System.EventHandler(this.preifjaAInfijaToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
+            this.salirToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";

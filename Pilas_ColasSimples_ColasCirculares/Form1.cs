@@ -63,5 +63,10 @@ namespace Pilas_ColasSimples_ColasCirculares
         {
             Application.Exit();
         }
+
+        private void colaCircularConEstructuraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
