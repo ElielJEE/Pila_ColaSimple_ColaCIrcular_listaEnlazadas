@@ -13,6 +13,7 @@ namespace Pilas_ColasSimples_ColasCirculares
 
         int final = -1, frente = -1, Cantidadmax;
 
+        //Constructor de los clientes para el arreglo
         struct Clientes
         {
             public string nombre, marca;

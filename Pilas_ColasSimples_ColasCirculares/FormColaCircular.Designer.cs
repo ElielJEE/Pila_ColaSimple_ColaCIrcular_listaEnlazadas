@@ -32,6 +32,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormColaCircular));
             this.btnclose = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_reiniciar_cola = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +54,6 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.btn_reiniciar_cola = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -85,6 +85,19 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(872, 498);
             this.panel1.TabIndex = 2;
+            // 
+            // btn_reiniciar_cola
+            // 
+            this.btn_reiniciar_cola.BackColor = System.Drawing.Color.Black;
+            this.btn_reiniciar_cola.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_reiniciar_cola.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reiniciar_cola.Location = new System.Drawing.Point(415, 46);
+            this.btn_reiniciar_cola.Name = "btn_reiniciar_cola";
+            this.btn_reiniciar_cola.Size = new System.Drawing.Size(113, 26);
+            this.btn_reiniciar_cola.TabIndex = 15;
+            this.btn_reiniciar_cola.Text = "Reiniciar Cola";
+            this.btn_reiniciar_cola.UseVisualStyleBackColor = false;
+            this.btn_reiniciar_cola.Click += new System.EventHandler(this.btn_reiniciar_cola_Click);
             // 
             // btnEliminar
             // 
@@ -185,6 +198,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtClienteCant.Name = "txtClienteCant";
             this.txtClienteCant.Size = new System.Drawing.Size(100, 24);
             this.txtClienteCant.TabIndex = 2;
+            this.txtClienteCant.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtClienteCant_KeyPress);
             // 
             // groupBox1
             // 
@@ -206,6 +220,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos:";
+            
             // 
             // btnSubmitDatos
             // 
@@ -233,6 +248,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtHoras.Name = "txtHoras";
             this.txtHoras.Size = new System.Drawing.Size(132, 24);
             this.txtHoras.TabIndex = 4;
+            this.txtHoras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoras_KeyPress);
             // 
             // label3
             // 
@@ -258,6 +274,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(132, 24);
             this.txtPrecio.TabIndex = 2;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // txtMarca
             // 
@@ -265,6 +282,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(132, 24);
             this.txtMarca.TabIndex = 2;
+            this.txtMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMarca_KeyPress);
             // 
             // label1
             // 
@@ -281,19 +299,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(131, 24);
             this.txtNombre.TabIndex = 0;
-            // 
-            // btn_reiniciar_cola
-            // 
-            this.btn_reiniciar_cola.BackColor = System.Drawing.Color.Black;
-            this.btn_reiniciar_cola.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_reiniciar_cola.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reiniciar_cola.Location = new System.Drawing.Point(415, 46);
-            this.btn_reiniciar_cola.Name = "btn_reiniciar_cola";
-            this.btn_reiniciar_cola.Size = new System.Drawing.Size(113, 26);
-            this.btn_reiniciar_cola.TabIndex = 15;
-            this.btn_reiniciar_cola.Text = "Reiniciar Cola";
-            this.btn_reiniciar_cola.UseVisualStyleBackColor = false;
-            this.btn_reiniciar_cola.Click += new System.EventHandler(this.btn_reiniciar_cola_Click);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // FormColaCircular
             // 
