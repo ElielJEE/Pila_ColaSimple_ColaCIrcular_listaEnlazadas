@@ -35,30 +35,6 @@ namespace Pilas_ColasSimples_ColasCirculares
             colaCircular.Show();
         }
 
-        private void infijaAPosfijaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormInfijaPosfija infijaPosfija = new FormInfijaPosfija();
-            infijaPosfija.Show();
-        }
-
-        private void infijaAPrefijaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormInfijaPrefija infijaPrefija = new FormInfijaPrefija();
-            infijaPrefija.Show();
-        }
-
-        private void posfijaAInfijaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormPosfijaInfija posfijaInfija = new FormPosfijaInfija();
-            posfijaInfija.Show();
-        }
-
-        private void preifjaAInfijaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormPrefijaInfija prefijaInfija = new FormPrefijaInfija();
-            prefijaInfija.Show();
-        }
-
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();

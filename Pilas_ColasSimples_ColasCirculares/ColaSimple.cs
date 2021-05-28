@@ -5,16 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Pilas_ColasSimples_ColasCirculares
 {
-    class ColaCirular
+    class ColaSimple
     {
+        int frente, final, maximo;
 
-        int final = -1, frente = -1, Cantidadmax;
-
-        //Constructor de los clientes para el arreglo
-        struct Clientes
+        public struct Clientes
         {
             public string nombre, marca;
             public double precio, total;
@@ -22,28 +19,19 @@ namespace Pilas_ColasSimples_ColasCirculares
         }
         Clientes[] cliente;
 
-        public ColaCirular(int cantidadMax)
+        public ColaSimple(int max)
         {
-            this.Cantidadmax = cantidadMax;
-            cliente = new Clientes[cantidadMax];
+            frente = -1;
+            final = -1;
+            maximo = max;
+            cliente = new Clientes[maximo];
         }
 
         public void Agregar(string nombre, string marca, double precio, double total, int horas, DataGridView dgv)
         {
-            if ((final == Cantidadmax - 1 && frente == 0) || (final + 1 == frente))
+            if (final < maximo - 1)
             {
-                MessageBox.Show("Cola llena.", "aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                if (final == Cantidadmax - 1)
-                {
-                    final = 0;
-                }
-                else
-                {
-                    final++;
-                }
+                final++;
 
                 cliente[final].nombre = nombre;
                 cliente[final].marca = marca;
@@ -52,26 +40,25 @@ namespace Pilas_ColasSimples_ColasCirculares
                 cliente[final].horas = horas;
 
                 dgv.Rows.Add(cliente[final].nombre, cliente[final].marca,
-                  cliente[final].precio, cliente[final].horas, cliente[final].total);
+                    cliente[final].precio, cliente[final].horas, cliente[final].total);
 
-                if (frente == -1)
+                if (final == 0)
                 {
                     frente = 0;
                 }
+            }
+            else
+            {
+                MessageBox.Show("La cola esta llena.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         public void Eliminar(DataGridView dgv)
         {
-
-            if (frente == -1)
-            {
-                MessageBox.Show("Cola Vacia.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
+            if (frente > -1)
             {
                 dgv.Rows.RemoveAt(0);
-
+                
                 if (frente == final)
                 {
                     frente = -1;
@@ -79,15 +66,12 @@ namespace Pilas_ColasSimples_ColasCirculares
                 }
                 else
                 {
-                    if (frente == Cantidadmax - 1)
-                    {
-                        frente = 0;
-                    }
-                    else
-                    {
-                        frente++;
-                    }
+                    frente++;
                 }
+            }
+            else
+            {
+                MessageBox.Show("La cola esta vacia.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

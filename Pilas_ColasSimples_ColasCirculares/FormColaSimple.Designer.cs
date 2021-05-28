@@ -50,6 +50,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.btnReiniciarCola = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -145,6 +146,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtClienteCant.Name = "txtClienteCant";
             this.txtClienteCant.Size = new System.Drawing.Size(100, 20);
             this.txtClienteCant.TabIndex = 2;
+            this.txtClienteCant.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtClienteCant_KeyPress);
             // 
             // groupBox1
             // 
@@ -190,6 +192,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtHoras.Name = "txtHoras";
             this.txtHoras.Size = new System.Drawing.Size(100, 20);
             this.txtHoras.TabIndex = 4;
+            this.txtHoras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoras_KeyPress);
             // 
             // label3
             // 
@@ -215,6 +218,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 2;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // txtMarca
             // 
@@ -222,6 +226,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(100, 20);
             this.txtMarca.TabIndex = 2;
+            this.txtMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMarca_KeyPress);
             // 
             // label1
             // 
@@ -238,6 +243,17 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 0;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            // 
+            // btnReiniciarCola
+            // 
+            this.btnReiniciarCola.Location = new System.Drawing.Point(450, 97);
+            this.btnReiniciarCola.Name = "btnReiniciarCola";
+            this.btnReiniciarCola.Size = new System.Drawing.Size(75, 23);
+            this.btnReiniciarCola.TabIndex = 8;
+            this.btnReiniciarCola.Text = "Reset";
+            this.btnReiniciarCola.UseVisualStyleBackColor = true;
+            this.btnReiniciarCola.Click += new System.EventHandler(this.btnReiniciarCola_Click);
             // 
             // FormColaSimple
             // 
@@ -246,6 +262,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.BackgroundImage = global::Pilas_ColasSimples_ColasCirculares.Properties.Resources._2225473;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(618, 332);
+            this.Controls.Add(this.btnReiniciarCola);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
@@ -284,5 +301,6 @@ namespace Pilas_ColasSimples_ColasCirculares
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Button btnReiniciarCola;
     }
 }

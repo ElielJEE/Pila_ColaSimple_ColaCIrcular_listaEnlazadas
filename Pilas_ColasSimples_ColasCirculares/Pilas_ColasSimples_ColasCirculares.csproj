@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ColaCirular.cs" />
+    <Compile Include="ColaSimple.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,36 +66,13 @@
     <Compile Include="FormColaSimple.Designer.cs">
       <DependentUpon>FormColaSimple.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormInfijaPosfija.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInfijaPosfija.Designer.cs">
-      <DependentUpon>FormInfijaPosfija.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormInfijaPrefija.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInfijaPrefija.Designer.cs">
-      <DependentUpon>FormInfijaPrefija.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormPila.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPila.Designer.cs">
       <DependentUpon>FormPila.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPosfijaInfija.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPosfijaInfija.Designer.cs">
-      <DependentUpon>FormPosfijaInfija.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormPrefijaInfija.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPrefijaInfija.Designer.cs">
-      <DependentUpon>FormPrefijaInfija.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Pila.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -106,20 +84,8 @@
     <EmbeddedResource Include="FormColaSimple.resx">
       <DependentUpon>FormColaSimple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInfijaPosfija.resx">
-      <DependentUpon>FormInfijaPosfija.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormInfijaPrefija.resx">
-      <DependentUpon>FormInfijaPrefija.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormPila.resx">
       <DependentUpon>FormPila.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormPosfijaInfija.resx">
-      <DependentUpon>FormPosfijaInfija.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormPrefijaInfija.resx">
-      <DependentUpon>FormPrefijaInfija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

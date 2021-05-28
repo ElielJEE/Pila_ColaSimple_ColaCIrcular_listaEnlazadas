@@ -151,8 +151,6 @@ namespace Pilas_ColasSimples_ColasCirculares
             }
         }
 
-     
-
         private void txtHoras_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))

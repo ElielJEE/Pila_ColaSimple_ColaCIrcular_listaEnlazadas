@@ -50,6 +50,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnReiniciarPila = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -99,6 +100,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtHoras.Name = "txtHoras";
             this.txtHoras.Size = new System.Drawing.Size(100, 20);
             this.txtHoras.TabIndex = 4;
+            this.txtHoras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoras_KeyPress);
             // 
             // label3
             // 
@@ -124,6 +126,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 2;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // txtMarca
             // 
@@ -131,6 +134,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(100, 20);
             this.txtMarca.TabIndex = 2;
+            this.txtMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMarca_KeyPress);
             // 
             // label1
             // 
@@ -147,6 +151,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 0;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // groupBox2
             // 
@@ -186,6 +191,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtClienteCant.Name = "txtClienteCant";
             this.txtClienteCant.Size = new System.Drawing.Size(100, 20);
             this.txtClienteCant.TabIndex = 2;
+            this.txtClienteCant.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtClienteCant_KeyPress);
             // 
             // dataGridView1
             // 
@@ -239,6 +245,16 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // btnReiniciarPila
+            // 
+            this.btnReiniciarPila.Location = new System.Drawing.Point(458, 97);
+            this.btnReiniciarPila.Name = "btnReiniciarPila";
+            this.btnReiniciarPila.Size = new System.Drawing.Size(75, 23);
+            this.btnReiniciarPila.TabIndex = 8;
+            this.btnReiniciarPila.Text = "Reset";
+            this.btnReiniciarPila.UseVisualStyleBackColor = true;
+            this.btnReiniciarPila.Click += new System.EventHandler(this.btnReiniciarPila_Click);
+            // 
             // FormPila
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -246,6 +262,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.BackgroundImage = global::Pilas_ColasSimples_ColasCirculares.Properties.Resources.wp5898803_90s_aesthetic_vaporwave_wallpapers;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(626, 334);
+            this.Controls.Add(this.btnReiniciarPila);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
@@ -284,5 +301,6 @@ namespace Pilas_ColasSimples_ColasCirculares
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnReiniciarPila;
     }
 }

@@ -16,92 +16,26 @@ namespace Pilas_ColasSimples_ColasCirculares
         {
             InitializeComponent();
             groupBox1.Enabled = false;
+            btnEliminar.Enabled = false;
         }
+        int cantidadMax = 0;
 
-        int tope = -1, maximo;
-
-        public struct Clientes
-        {
-            public string nombre, marca;
-            public double precio, total;
-            public int horas;
-        }
-
-        Clientes[] cliente;
-
-        public bool PilaLlena()
-        {
-            if (tope == maximo - 1)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public bool PilaVacia()
-        {
-            if (tope == -1)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public void Agregar(string nombre, string marca, double precio, double total, int horas)
-        {
-            if (PilaLlena() == false)
-            {
-                tope++;
-                cliente[tope].nombre = nombre;
-                cliente[tope].marca = marca;
-                cliente[tope].precio = precio;
-                cliente[tope].horas = horas;
-                cliente[tope].total = total;
-                dataGridView1.Rows.Add(cliente[tope].nombre, cliente[tope].marca, cliente[tope].precio,
-                    cliente[tope].horas, cliente[tope].total);
-            }
-            else
-            {
-                MessageBox.Show("La pila esta llena.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        public void Eliminar()
-        {
-            if (PilaVacia() == false)
-            {
-                tope--;
-
-                dataGridView1.Rows.Clear();
-                for (int i = 0; i <= tope; i++)
-                {
-                    if (tope != -1)
-                    {
-                        dataGridView1.Rows.Add(cliente[i].nombre, cliente[i].marca, cliente[i].precio,
-                            cliente[i].horas, cliente[i].total);
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("La pila esta vacia.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
+        Pila pila;
         private void btnSubmitCantidad_Click(object sender, EventArgs e)
         {
             if (txtClienteCant.Text != "" && txtClienteCant.Text != "0")
             {
-                maximo = Convert.ToInt32(txtClienteCant.Text);
-                cliente = new Clientes[maximo];
+                cantidadMax = Convert.ToInt32(txtClienteCant.Text);
+
+                pila = new Pila(cantidadMax);
+
                 groupBox1.Enabled = true;
+
                 groupBox2.Enabled = false;
+
+                btnEliminar.Enabled = true;
+
+                txtNombre.Focus();
             }
             else
             {
@@ -113,13 +47,18 @@ namespace Pilas_ColasSimples_ColasCirculares
         {
             if (txtNombre.Text != "" && txtMarca.Text != "" && txtPrecio.Text != "" && txtHoras.Text != "")
             {
-                Agregar(txtNombre.Text, txtMarca.Text, Convert.ToDouble(txtPrecio.Text), 
-                    Convert.ToDouble(txtPrecio.Text) * Convert.ToInt32(txtHoras.Text), Convert.ToInt32(txtHoras.Text));
+                pila.Agregar(txtNombre.Text, txtMarca.Text, Convert.ToDouble(txtPrecio.Text), 
+                    Convert.ToDouble(txtPrecio.Text) * Convert.ToInt32(txtHoras.Text), Convert.ToInt32(txtHoras.Text), dataGridView1);
 
                 txtNombre.Clear();
+
                 txtMarca.Clear();
+
                 txtPrecio.Clear();
+
                 txtHoras.Clear();
+
+                txtNombre.Focus();
             }
             else
             {
@@ -129,7 +68,65 @@ namespace Pilas_ColasSimples_ColasCirculares
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            Eliminar();
+            pila.Eliminar(dataGridView1);
         }
+
+        private void btnReiniciarPila_Click(object sender, EventArgs e)
+        {
+            cantidadMax = 0;
+            txtClienteCant.Clear();
+            txtNombre.Clear();
+            txtHoras.Clear();
+            txtMarca.Clear();
+            txtPrecio.Clear();
+            dataGridView1.Rows.Clear();
+            groupBox2.Enabled = true;
+            groupBox1.Enabled = false;
+            txtClienteCant.Focus();
+        }
+
+        #region Focus de Textbox para Pasar de uno a otro
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                txtMarca.Focus();
+            }
+        }
+
+        private void txtMarca_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                txtPrecio.Focus();
+            }
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                txtHoras.Focus();
+            }
+        }
+
+        private void txtHoras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnSubmitDatos.Focus();
+            }
+        }
+
+        private void txtClienteCant_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnSubmitCantidad.Focus();
+            }
+        }
+
+        #endregion
     }
 }

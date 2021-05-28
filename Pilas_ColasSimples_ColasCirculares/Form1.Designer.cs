@@ -34,11 +34,6 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.PilasForm = new System.Windows.Forms.ToolStripMenuItem();
             this.ColasSimpleForm = new System.Windows.Forms.ToolStripMenuItem();
             this.ColasCircularesForm = new System.Windows.Forms.ToolStripMenuItem();
-            this.notacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infijaAPosfijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infijaAPrefijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.posfijaAInfijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.preifjaAInfijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -60,8 +55,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.PilasForm,
             this.ColasSimpleForm,
-            this.ColasCircularesForm,
-            this.notacionesToolStripMenuItem});
+            this.ColasCircularesForm});
             this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(69, 20);
@@ -87,45 +81,6 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.ColasCircularesForm.Size = new System.Drawing.Size(180, 22);
             this.ColasCircularesForm.Text = "Colas Circulares";
             this.ColasCircularesForm.Click += new System.EventHandler(this.ColasCircularesForm_Click);
-            // 
-            // notacionesToolStripMenuItem
-            // 
-            this.notacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.infijaAPosfijaToolStripMenuItem,
-            this.infijaAPrefijaToolStripMenuItem,
-            this.posfijaAInfijaToolStripMenuItem,
-            this.preifjaAInfijaToolStripMenuItem});
-            this.notacionesToolStripMenuItem.Name = "notacionesToolStripMenuItem";
-            this.notacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.notacionesToolStripMenuItem.Text = "Notaciones";
-            // 
-            // infijaAPosfijaToolStripMenuItem
-            // 
-            this.infijaAPosfijaToolStripMenuItem.Name = "infijaAPosfijaToolStripMenuItem";
-            this.infijaAPosfijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.infijaAPosfijaToolStripMenuItem.Text = "Infija a Posfija";
-            this.infijaAPosfijaToolStripMenuItem.Click += new System.EventHandler(this.infijaAPosfijaToolStripMenuItem_Click);
-            // 
-            // infijaAPrefijaToolStripMenuItem
-            // 
-            this.infijaAPrefijaToolStripMenuItem.Name = "infijaAPrefijaToolStripMenuItem";
-            this.infijaAPrefijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.infijaAPrefijaToolStripMenuItem.Text = "Infija a Prefija";
-            this.infijaAPrefijaToolStripMenuItem.Click += new System.EventHandler(this.infijaAPrefijaToolStripMenuItem_Click);
-            // 
-            // posfijaAInfijaToolStripMenuItem
-            // 
-            this.posfijaAInfijaToolStripMenuItem.Name = "posfijaAInfijaToolStripMenuItem";
-            this.posfijaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.posfijaAInfijaToolStripMenuItem.Text = "Posfija a Infija";
-            this.posfijaAInfijaToolStripMenuItem.Click += new System.EventHandler(this.posfijaAInfijaToolStripMenuItem_Click);
-            // 
-            // preifjaAInfijaToolStripMenuItem
-            // 
-            this.preifjaAInfijaToolStripMenuItem.Name = "preifjaAInfijaToolStripMenuItem";
-            this.preifjaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.preifjaAInfijaToolStripMenuItem.Text = "Preifja a Infija";
-            this.preifjaAInfijaToolStripMenuItem.Click += new System.EventHandler(this.preifjaAInfijaToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -161,11 +116,6 @@ namespace Pilas_ColasSimples_ColasCirculares
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ColasSimpleForm;
         private System.Windows.Forms.ToolStripMenuItem ColasCircularesForm;
-        private System.Windows.Forms.ToolStripMenuItem notacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem infijaAPosfijaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem infijaAPrefijaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem posfijaAInfijaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem preifjaAInfijaToolStripMenuItem;
     }
 }
 
