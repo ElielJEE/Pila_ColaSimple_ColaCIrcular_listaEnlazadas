@@ -128,5 +128,27 @@ namespace Pilas_ColasSimples_ColasCirculares
         }
 
         #endregion
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            int PosY = 0;
+            int PosX = 0;
+
+            if (e.Button != MouseButtons.Left)
+            {
+                _ = e.X;
+                _ = e.Y;
+            }
+            else
+            {
+                Left = Left + (e.X - PosX);
+                Top = Top + (e.Y - PosY);
+            }
+        }
     }
 }

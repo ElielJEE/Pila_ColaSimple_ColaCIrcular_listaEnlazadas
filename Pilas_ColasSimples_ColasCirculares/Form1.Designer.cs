@@ -46,7 +46,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(628, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(650, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,21 +64,21 @@ namespace Pilas_ColasSimples_ColasCirculares
             // PilasForm
             // 
             this.PilasForm.Name = "PilasForm";
-            this.PilasForm.Size = new System.Drawing.Size(180, 22);
+            this.PilasForm.Size = new System.Drawing.Size(158, 22);
             this.PilasForm.Text = "Pila";
             this.PilasForm.Click += new System.EventHandler(this.PilasForm_Click);
             // 
             // ColasSimpleForm
             // 
             this.ColasSimpleForm.Name = "ColasSimpleForm";
-            this.ColasSimpleForm.Size = new System.Drawing.Size(180, 22);
+            this.ColasSimpleForm.Size = new System.Drawing.Size(158, 22);
             this.ColasSimpleForm.Text = "Colas Simple";
             this.ColasSimpleForm.Click += new System.EventHandler(this.ColasSimpleForm_Click);
             // 
             // ColasCircularesForm
             // 
             this.ColasCircularesForm.Name = "ColasCircularesForm";
-            this.ColasCircularesForm.Size = new System.Drawing.Size(180, 22);
+            this.ColasCircularesForm.Size = new System.Drawing.Size(158, 22);
             this.ColasCircularesForm.Text = "Colas Circulares";
             this.ColasCircularesForm.Click += new System.EventHandler(this.ColasCircularesForm_Click);
             // 
@@ -96,10 +96,11 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pilas_ColasSimples_ColasCirculares.Properties.Resources.wp5898790_90s_aesthetic_vaporwave_wallpapers;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(628, 335);
+            this.ClientSize = new System.Drawing.Size(650, 391);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMenu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

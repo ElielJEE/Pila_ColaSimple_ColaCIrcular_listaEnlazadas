@@ -29,6 +29,7 @@ namespace Pilas_ColasSimples_ColasCirculares
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPila));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSubmitDatos = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,9 +52,15 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnReiniciarPila = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -68,18 +75,19 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.groupBox1.Controls.Add(this.txtMarca);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(495, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(116, 248);
+            this.groupBox1.Size = new System.Drawing.Size(116, 304);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos:";
             // 
             // btnSubmitDatos
             // 
-            this.btnSubmitDatos.Location = new System.Drawing.Point(18, 209);
+            this.btnSubmitDatos.Location = new System.Drawing.Point(20, 250);
             this.btnSubmitDatos.Name = "btnSubmitDatos";
-            this.btnSubmitDatos.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmitDatos.Size = new System.Drawing.Size(75, 31);
             this.btnSubmitDatos.TabIndex = 6;
             this.btnSubmitDatos.Text = "Agregar";
             this.btnSubmitDatos.UseVisualStyleBackColor = true;
@@ -88,68 +96,68 @@ namespace Pilas_ColasSimples_ColasCirculares
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 167);
+            this.label4.Location = new System.Drawing.Point(32, 181);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(53, 18);
             this.label4.TabIndex = 5;
             this.label4.Text = "Horas:";
             // 
             // txtHoras
             // 
-            this.txtHoras.Location = new System.Drawing.Point(6, 183);
+            this.txtHoras.Location = new System.Drawing.Point(9, 206);
             this.txtHoras.Name = "txtHoras";
-            this.txtHoras.Size = new System.Drawing.Size(100, 20);
+            this.txtHoras.Size = new System.Drawing.Size(100, 24);
             this.txtHoras.TabIndex = 4;
             this.txtHoras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoras_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 119);
+            this.label3.Location = new System.Drawing.Point(30, 125);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(55, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "Precio:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 72);
+            this.label2.Location = new System.Drawing.Point(27, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(54, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Marca:";
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(6, 135);
+            this.txtPrecio.Location = new System.Drawing.Point(8, 150);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(100, 24);
             this.txtPrecio.TabIndex = 2;
             this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(6, 88);
+            this.txtMarca.Location = new System.Drawing.Point(7, 95);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(100, 20);
+            this.txtMarca.Size = new System.Drawing.Size(100, 24);
             this.txtMarca.TabIndex = 2;
             this.txtMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMarca_KeyPress);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 26);
+            this.label1.Location = new System.Drawing.Point(20, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(66, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombre:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(6, 42);
+            this.txtNombre.Location = new System.Drawing.Point(6, 45);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(100, 24);
             this.txtNombre.TabIndex = 0;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
@@ -159,7 +167,8 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.groupBox2.Controls.Add(this.btnSubmitCantidad);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtClienteCant);
-            this.groupBox2.Location = new System.Drawing.Point(134, 12);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(630, 31);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(114, 108);
             this.groupBox2.TabIndex = 1;
@@ -168,6 +177,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             // 
             // btnSubmitCantidad
             // 
+            this.btnSubmitCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmitCantidad.Location = new System.Drawing.Point(18, 68);
             this.btnSubmitCantidad.Name = "btnSubmitCantidad";
             this.btnSubmitCantidad.Size = new System.Drawing.Size(75, 23);
@@ -179,17 +189,17 @@ namespace Pilas_ColasSimples_ColasCirculares
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 26);
+            this.label5.Location = new System.Drawing.Point(6, 24);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.Size = new System.Drawing.Size(61, 18);
             this.label5.TabIndex = 3;
             this.label5.Text = "Clientes";
             // 
             // txtClienteCant
             // 
-            this.txtClienteCant.Location = new System.Drawing.Point(6, 42);
+            this.txtClienteCant.Location = new System.Drawing.Point(6, 43);
             this.txtClienteCant.Name = "txtClienteCant";
-            this.txtClienteCant.Size = new System.Drawing.Size(100, 20);
+            this.txtClienteCant.Size = new System.Drawing.Size(100, 24);
             this.txtClienteCant.TabIndex = 2;
             this.txtClienteCant.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtClienteCant_KeyPress);
             // 
@@ -202,9 +212,9 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(134, 126);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 32);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(480, 196);
+            this.dataGridView1.Size = new System.Drawing.Size(477, 281);
             this.dataGridView1.TabIndex = 2;
             // 
             // Column1
@@ -237,7 +247,8 @@ namespace Pilas_ColasSimples_ColasCirculares
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(539, 97);
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(656, 175);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 7;
@@ -247,33 +258,73 @@ namespace Pilas_ColasSimples_ColasCirculares
             // 
             // btnReiniciarPila
             // 
-            this.btnReiniciarPila.Location = new System.Drawing.Point(458, 97);
+            this.btnReiniciarPila.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReiniciarPila.Location = new System.Drawing.Point(656, 145);
             this.btnReiniciarPila.Name = "btnReiniciarPila";
             this.btnReiniciarPila.Size = new System.Drawing.Size(75, 23);
             this.btnReiniciarPila.TabIndex = 8;
-            this.btnReiniciarPila.Text = "Reset";
+            this.btnReiniciarPila.Text = "Reiniciar";
             this.btnReiniciarPila.UseVisualStyleBackColor = true;
             this.btnReiniciarPila.Click += new System.EventHandler(this.btnReiniciarPila_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(-1, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(745, 29);
+            this.panel1.TabIndex = 9;
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(710, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(626, 204);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(133, 146);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
             // 
             // FormPila
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Pilas_ColasSimples_ColasCirculares.Properties.Resources.wp5898803_90s_aesthetic_vaporwave_wallpapers;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(626, 334);
+            this.ClientSize = new System.Drawing.Size(743, 348);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnReiniciarPila);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPila";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPila";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -302,5 +353,8 @@ namespace Pilas_ColasSimples_ColasCirculares
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnReiniciarPila;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
