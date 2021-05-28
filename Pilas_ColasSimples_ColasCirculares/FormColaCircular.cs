@@ -17,6 +17,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             InitializeComponent();
             groupBox1.Enabled = false;
             btnEliminar.Enabled = false;
+            btn_reiniciar_cola.Enabled = false;
         }
 
         int cantidadMax = 0;
@@ -39,6 +40,8 @@ namespace Pilas_ColasSimples_ColasCirculares
                 groupBox1.Enabled = true;
 
                 btnEliminar.Enabled = true;
+
+                btn_reiniciar_cola.Enabled = true;
 
                 txtNombre.Focus();
             }
@@ -168,5 +171,23 @@ namespace Pilas_ColasSimples_ColasCirculares
         }
 
         #endregion
+
+        //evento para poder mover la ventana donde nosotros queramos
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            int PosY = 0;
+            int PosX = 0;
+
+            if (e.Button != MouseButtons.Left)
+            {
+                _ = e.X;
+                _ = e.Y;
+            }
+            else
+            {
+                Left = Left + (e.X - PosX);
+                Top = Top + (e.Y - PosY);
+            }
+        }
     }
 }

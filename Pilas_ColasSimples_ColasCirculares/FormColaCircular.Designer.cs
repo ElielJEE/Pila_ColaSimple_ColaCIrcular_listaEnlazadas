@@ -54,18 +54,20 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnclose
             // 
             this.btnclose.BackColor = System.Drawing.Color.Transparent;
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(843, 2);
+            this.btnclose.Location = new System.Drawing.Point(844, 3);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(34, 28);
             this.btnclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -81,7 +83,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(7, 31);
+            this.panel1.Location = new System.Drawing.Point(7, 34);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(872, 498);
             this.panel1.TabIndex = 2;
@@ -220,7 +222,6 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos:";
-            
             // 
             // btnSubmitDatos
             // 
@@ -301,6 +302,16 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.txtNombre.TabIndex = 0;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel2.Controls.Add(this.btnclose);
+            this.panel2.Location = new System.Drawing.Point(-2, -2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(891, 30);
+            this.panel2.TabIndex = 4;
+            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
+            // 
             // FormColaCircular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,7 +319,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(887, 534);
-            this.Controls.Add(this.btnclose);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormColaCircular";
@@ -320,6 +331,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -350,5 +362,6 @@ namespace Pilas_ColasSimples_ColasCirculares
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btn_reiniciar_cola;
+        private System.Windows.Forms.Panel panel2;
     }
 }
