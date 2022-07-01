@@ -40,6 +40,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.posfijaAInfijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preifjaAInfijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaEnlazadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +62,7 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.PilasForm,
             this.ColasSimpleForm,
             this.ColasCircularesForm,
+            this.listaEnlazadasToolStripMenuItem,
             this.notacionesToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(69, 20);
@@ -101,28 +103,28 @@ namespace Pilas_ColasSimples_ColasCirculares
             // infijaAPosfijaToolStripMenuItem
             // 
             this.infijaAPosfijaToolStripMenuItem.Name = "infijaAPosfijaToolStripMenuItem";
-            this.infijaAPosfijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.infijaAPosfijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.infijaAPosfijaToolStripMenuItem.Text = "Infija a Posfija";
             this.infijaAPosfijaToolStripMenuItem.Click += new System.EventHandler(this.infijaAPosfijaToolStripMenuItem_Click);
             // 
             // infijaAPrefijaToolStripMenuItem
             // 
             this.infijaAPrefijaToolStripMenuItem.Name = "infijaAPrefijaToolStripMenuItem";
-            this.infijaAPrefijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.infijaAPrefijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.infijaAPrefijaToolStripMenuItem.Text = "Infija a Prefija";
             this.infijaAPrefijaToolStripMenuItem.Click += new System.EventHandler(this.infijaAPrefijaToolStripMenuItem_Click);
             // 
             // posfijaAInfijaToolStripMenuItem
             // 
             this.posfijaAInfijaToolStripMenuItem.Name = "posfijaAInfijaToolStripMenuItem";
-            this.posfijaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.posfijaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.posfijaAInfijaToolStripMenuItem.Text = "Posfija a Infija";
             this.posfijaAInfijaToolStripMenuItem.Click += new System.EventHandler(this.posfijaAInfijaToolStripMenuItem_Click);
             // 
             // preifjaAInfijaToolStripMenuItem
             // 
             this.preifjaAInfijaToolStripMenuItem.Name = "preifjaAInfijaToolStripMenuItem";
-            this.preifjaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.preifjaAInfijaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.preifjaAInfijaToolStripMenuItem.Text = "Preifja a Infija";
             this.preifjaAInfijaToolStripMenuItem.Click += new System.EventHandler(this.preifjaAInfijaToolStripMenuItem_Click);
             // 
@@ -132,6 +134,13 @@ namespace Pilas_ColasSimples_ColasCirculares
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // listaEnlazadasToolStripMenuItem
+            // 
+            this.listaEnlazadasToolStripMenuItem.Name = "listaEnlazadasToolStripMenuItem";
+            this.listaEnlazadasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaEnlazadasToolStripMenuItem.Text = "Lista Enlazadas";
+            this.listaEnlazadasToolStripMenuItem.Click += new System.EventHandler(this.listaEnlazadasToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -164,6 +173,7 @@ namespace Pilas_ColasSimples_ColasCirculares
         private System.Windows.Forms.ToolStripMenuItem infijaAPrefijaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem posfijaAInfijaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem preifjaAInfijaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listaEnlazadasToolStripMenuItem;
     }
 }
 

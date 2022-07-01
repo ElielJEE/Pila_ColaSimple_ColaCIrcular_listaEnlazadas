@@ -59,9 +59,16 @@ namespace Pilas_ColasSimples_ColasCirculares
             prefijaInfija.Show();
         }
 
+        private void listaEnlazadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListaEnlazadas listaEnlazadas = new FormListaEnlazadas();
+            listaEnlazadas.Show();
+        }
+
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
     }
 }

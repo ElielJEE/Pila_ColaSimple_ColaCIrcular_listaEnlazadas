@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CNodo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +77,12 @@
     <Compile Include="FormInfijaPrefija.Designer.cs">
       <DependentUpon>FormInfijaPrefija.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListaEnlazadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaEnlazadas.Designer.cs">
+      <DependentUpon>FormListaEnlazadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +101,13 @@
     <Compile Include="FormPrefijaInfija.Designer.cs">
       <DependentUpon>FormPrefijaInfija.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormX.Designer.cs">
+      <DependentUpon>FormX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -111,6 +125,9 @@
     <EmbeddedResource Include="FormInfijaPrefija.resx">
       <DependentUpon>FormInfijaPrefija.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormListaEnlazadas.resx">
+      <DependentUpon>FormListaEnlazadas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPila.resx">
       <DependentUpon>FormPila.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrefijaInfija.resx">
       <DependentUpon>FormPrefijaInfija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormX.resx">
+      <DependentUpon>FormX.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
